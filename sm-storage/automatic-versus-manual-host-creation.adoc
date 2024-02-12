@@ -1,0 +1,41 @@
+---
+permalink: sm-storage/automatic-versus-manual-host-creation.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, automatic, manual, host, 
+summary: A criação de um host é uma das etapas necessárias para que o storage array saiba quais hosts estão conetados a ele e para permitir o acesso de e/S aos volumes. Você pode criar um host automaticamente ou manualmente. 
+---
+= Criação automática versus manual do host
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+A criação de um host é uma das etapas necessárias para que o storage array saiba quais hosts estão conetados a ele e para permitir o acesso de e/S aos volumes. Você pode criar um host automaticamente ou manualmente.
+
+
+
+== Criação automática
+
+A criação automática de host para hosts baseados em SCSI (não NVMe-of) é iniciada pelo HCA (Host Context Agent). O HCA é um utilitário que você pode instalar em cada host conetado ao storage array. Cada host que tem o HCA instalado envia suas informações de configuração para as controladoras de storage array por meio do caminho de e/S. Com base nas informações do host, os controladores criam automaticamente o host e as portas de host associadas e definem o tipo de host. Se necessário, você pode fazer quaisquer alterações adicionais na configuração do host usando o System Manager.
+
+Depois que o HCA executa sua deteção automática, o host aparece automaticamente na página hosts com os seguintes atributos:
+
+* O nome do host derivado do nome do sistema do host.
+* As portas de identificador de host que estão associadas ao host.
+* O tipo de sistema operacional do host.
+
+
+Os hosts são criados como hosts independentes. O HCA não cria nem adiciona automaticamente aos clusters de host.
+
+
+
+== Criação manual
+
+Você pode querer criar manualmente um host por um dos seguintes motivos:
+
+. Você escolheu não instalar o utilitário HCA em seus hosts.
+. Você deseja garantir que os identificadores de porta do host detetados pelos controladores de storage estejam associados corretamente aos hosts.
+
+
+Durante a criação manual do host, você associa identificadores de porta do host selecionando-os em uma lista ou inserindo-os manualmente. Depois de criar um host, você poderá atribuir volumes a ele ou adicioná-lo a um cluster de host se desejar compartilhar o acesso a volumes.

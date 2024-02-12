@@ -1,0 +1,260 @@
+---
+sidebar: sidebar 
+permalink: whats-new.html 
+keywords: whats new, new features, SANtricity 11.72 
+summary: Novos recursos no SANtricity os. 
+---
+= Novidades no SANtricity os 11,7
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+A tabela a seguir descreve os novos recursos no Gerenciador de sistema do SANtricity 11,7.
+
+
+
+== Novos recursos na versão 11,75
+
+Os sistemas devem estar executando o 11.70.5 para atualizar para o 11,80.x ou posterior.
+
+
+
+== Novos recursos na versão 11,74
+
+[cols="35h,~"]
+|===
+| Novo recurso | Descrição 
+
+
+ a| 
+Suporte para FIPS 140-3
+ a| 
+Agora, o FIPS 140-3 é compatível com determinadas unidades para SSDs baseados em SAS e NVMe. As unidades SSD de nível FIPS 140-3 podem coexistir com as unidades SSD de nível FIPS 140-2, desde que todas as unidades sejam baseadas em NVMe ou todas baseadas em SAS. Ao usar uma mistura desses níveis em grupos de volume e pools de discos, esteja ciente de que o grupo ou pool funcionará no nível mais baixo de segurança (140-2).
+
+
+
+ a| 
+Suporte a MFA e SSH
+ a| 
+Para as versões 11,74 e posteriores do SANtricity, o recurso Login remoto permite configurar a autorização multifator (MFA), exigindo que os usuários digitem uma chave SSH e/ou uma senha SSH. A opção de menu na seção hardware mudou de *alterar login remoto* para *Configurar login remoto (SSH)*.
+
+
+
+ a| 
+Acesse tokens
+ a| 
+Esta versão inclui um novo recurso para criar tokens de acesso. Esses tokens permitem que você se autentique com a API REST ou interface de linha de comando (CLI), sem expor nomes de usuário e senhas. Esse recurso é fornecido na seção Gerenciamento de acesso.
+
+|===
+
+
+== Novos recursos na versão 11,73
+
+[cols="35h,~"]
+|===
+| Novo recurso | Descrição 
+
+
+ a| 
+Provisionamento de recursos e suporte DULBE
+ a| 
+Os recursos de provisionamento de recursos e os recursos da unidade DULBE agora são totalmente suportados nesta versão. Esse suporte inclui tornar o MAPEAMENTO direcionado para o host em volumes provisionados por recursos mais amplamente utilizável.
+
+
+
+ a| 
+Expansão SAS de EF600 GB (512e GB)
+ a| 
+Esta versão fornece suporte para expansão para gabinetes SAS-3 para o sistema de armazenamento EF600. Com essa expansão, os SSDs NVMe de 4KiB blocos podem coexistir com SSDs e HDDs SAS de 512e TB. No entanto, unidades com tamanhos de bloco diferentes não podem ser configuradas no mesmo pool ou grupo de volume.
+
+
+
+ a| 
+Compatível com SSD QLC
+ a| 
+Esta versão suporta a geração atual de SSDs QLC que têm o recurso ONTAP definido no firmware da unidade, mas não têm o conjunto completo de recursos específicos da e-Series. As unidades QLC (somente NVMe) são menores, mas têm menor desempenho de gravação e baixa classificação de resistência. Portanto, elas não devem ser usadas com workloads com uso intenso de gravação.
+
+
+
+ a| 
+Suporte a TLS 1,3
+ a| 
+Agora, o TLS 1,3 é compatível com o gerenciamento incorporado. Esse suporte se aplica ao System Manager e aos Serviços da Web incorporados, com a capacidade de ativá-lo ou desativá-lo. (O suporte a TLS 1,3 foi adicionado em uma versão anterior para o Web Services Proxy e Unified Manager.)
+
+
+
+ a| 
+RAID 1 DDP com no mínimo de 8 unidades
+ a| 
+Com essa versão, o RAID 1 DDP não requer mais um mínimo de 11 SSDs em um pool. O mínimo agora permite pools de SSD de 8 unidades se apenas volumes RAID 1 forem criados no pool.
+
+
+
+ a| 
+Eliminação da chave EKMS
+ a| 
+Um administrador de armazenamento agora pode solicitar um servidor de gerenciamento de chaves externo (EKMS) para excluir uma chave antiga. A exclusão de chave ocorre somente durante um processo de rechave depois que as unidades instaladas tiverem a nova chave.
+
+|===
+
+
+== Novos recursos na versão 11,72
+
+[cols="35h,~"]
+|===
+| Novo recurso | Descrição 
+
+
+ a| 
+Suporte SNMPv3
+ a| 
+SNMPv3 agora é compatível com notificações de alerta, configuráveis no menu:Configurações[Alertas]. O SNMPv3 fornece segurança através de autenticação forte e criptografia de dados.
+
+
+
+ a| 
+Suporte a replicação de chaves para vários servidores de chaves
+ a| 
+Para o gerenciamento de chaves externas para unidades de autocriptografia, a caixa de diálogo criar gerenciamento de chaves externas inclui uma nova opção para adicionar vários servidores de chaves.
+
+
+
+ a| 
+Versões atualizadas do navegador
+ a| 
+As versões mínimas do navegador do System Manager foram atualizadas.
+
+|===
+
+
+== Novos recursos na versão 11,71
+
+[cols="35h,~"]
+|===
+| Novo recurso | Descrição 
+
+
+ a| 
+EF300 expansão
+| Esta versão fornece suporte para expansão para gabinetes SAS-3 para o sistema de armazenamento EF300. Com essa expansão, os SSDs NVMe de 4KiB blocos podem coexistir com SSDs e HDDs SAS de 512e TB. No entanto, unidades com tamanhos de bloco diferentes não podem ser configuradas no mesmo pool ou grupo de volume. 
+
+
+ a| 
+Opção de modo FEC na configuração iSCSI
+ a| 
+Para matrizes de armazenamento que utilizam a placa de interface de anfitrião iSCSI de 25GB GB, está disponível uma nova opção para definir o modo de correção de erros de encaminhamento (FEC) quando configurar portas iSCSI.
+
+
+
+ a| 
+Volumes de armazenamento remoto
+ a| 
+A funcionalidade de volumes de armazenamento remoto opcional permite importar volumes de um sistema de armazenamento remoto para um sistema de armazenamento local da série e utilizando uma ligação iSCSI. O storage remoto pode ser a mesma marca que o seu sistema e-Series ou de um fornecedor de storage diferente, desde que seja acessível por iSCSI.
+
+
+
+ a| 
+Funcionalidade de higienizar (apagar) adicionada para unidades sem FDE
+ a| 
+O recurso de limpeza da unidade agora inclui unidades sem FDE no procedimento. A partir da página hardware, pode abrir o menu de contexto da unidade e selecionar "Apagar" (anteriormente, esta seleção era "Apagar seguro").
+
+
+
+ a| 
+Conexão segura para alertas de e-mail
+ a| 
+Para ativar notificações de e-mail criptografadas, você pode configurar opcionalmente e-mails de saída (alertas, envios ASUP) para fornecer credenciais de autenticação. Os tipos de criptografia incluem SMTPS e STARTTLS.
+
+
+
+ a| 
+Adições de AutoSupport
+ a| 
+Um alerta agora aparece na área notificações quando o AutoSupport não está ativado.
+
+
+
+ a| 
+Alteração de formato de alerta syslog
+ a| 
+O formato de alerta Syslog agora suporta RFC 5424.
+
+|===
+
+
+== Novos recursos na versão 11,70
+
+[cols="35h,~"]
+|===
+| Novo recurso | Descrição 
+
+
+ a| 
+Novo modelo de sistema de armazenamento – EF300
+ a| 
+Esta versão apresenta o sistema de storage all-NVMe-flash de baixo custo EF300. O EF300 inclui 24 unidades SSD NVMe e uma única placa de interface de host (HIC) por controladora. As interfaces de host NVMe sobre Fabrics com suporte incluem NVMe sobre IB, NVMe sobre RoCE e NVMe sobre FC. As interfaces SCSI compatíveis incluem FC, IB em iSER e IB em SRP. Vários sistemas de storage EF300 e outros sistemas de storage e-Series podem ser visualizados e gerenciados no Unified Manager.
+
+
+
+ a| 
+Novo recurso de provisionamento de recursos (somente EF300 e EF600)
+ a| 
+O recurso provisionamento de recursos é novo para os sistemas de armazenamento EF300 e EF600. Os volumes provisionados por recurso podem ser colocados em uso imediatamente sem processo de inicialização em segundo plano.
+
+
+
+ a| 
+Adicionar opção de tamanho de bloco 512e (apenas EF300 e EF600)
+ a| 
+Para sistemas de armazenamento EF300 e EF600, um volume pode ser definido para suportar um tamanho de bloco de 512 bytes ou 4KiB. O recurso 512e foi adicionado para permitir o suporte da interface de host iSCSI e do sistema operacional VMware. Se possível, o System Manager sugere o valor padrão apropriado.
+
+
+
+ a| 
+Nova opção de envio de despachos AutoSupport sob demanda
+ a| 
+Um novo recurso Enviar Envio AutoSupport permite que você envie dados para o suporte técnico sem esperar por um despacho programado. Esta opção está disponível na guia AutoSupport (Configuração) do Centro de suporte.
+
+
+
+ a| 
+Aprimoramentos do servidor de gerenciamento de chaves externas
+ a| 
+O recurso para conexão a um servidor de gerenciamento de chaves externo inclui os seguintes aprimoramentos:
+
+* Ignore a função para criar uma chave de backup.
+* Escolha um certificado intermediário para o servidor de gerenciamento de chaves, além dos certificados de cliente e servidor.
+
+
+
+
+ a| 
+Aprimoramentos de certificado
+ a| 
+Esta versão permite usar uma ferramenta externa como o OpenSSL para gerar uma solicitação de assinatura de certificado (CSR), que também exige que você importe um arquivo de chave privada juntamente com o certificado assinado.
+
+
+
+ a| 
+Novo recurso de Inicialização off-line para grupos de volume
+ a| 
+Para a criação de volume, o System Manager fornece um método para ignorar a etapa de atribuição do host para que os volumes recém-criados sejam inicializados off-line. Essa funcionalidade é aplicável apenas a grupos de volumes RAID em unidades SAS (ou seja, não a pools de disco dinâmicos ou aos SSDs NVMe incluídos nos sistemas de storage EF300 e EF600). Esse recurso destina-se a cargas de trabalho que precisam ter os volumes com desempenho total quando o uso começa, em vez de ter a inicialização executada em segundo plano.
+
+
+
+ a| 
+Novo recurso coletar dados de configuração
+ a| 
+Esse novo recurso salva os dados de configuração RAID do controlador, que inclui todos os dados para grupos de volumes e pools de discos (as mesmas informações do comando CLI para `save storageArray dbmDatabase`). Esse recurso foi adicionado para auxiliar o suporte técnico e está localizado na guia Diagnósticos do Centro de suporte.
+
+
+
+ a| 
+Altere a capacidade de preservação padrão para pools de discos no caso de unidade 12
+ a| 
+Anteriormente, um pool de discos de 12 unidades foi criado com capacidade de preservação (sobressalente) suficiente para cobrir duas unidades. O padrão agora é alterado para lidar com uma única falha de unidade para oferecer um pequeno pool padrão mais econômico.
+
+|===

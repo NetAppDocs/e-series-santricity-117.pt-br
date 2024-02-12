@@ -1,0 +1,38 @@
+---
+permalink: sm-storage/create-host-automatically.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, create, host, automatically 
+summary: 'Você pode permitir que o agente de contexto do host (HCA) detete automaticamente os hosts e verifique se as informações estão corretas. A criação de um host é uma das etapas necessárias para que o storage array saiba quais hosts estão conetados a ele e para permitir o acesso de e/S aos volumes.' 
+---
+= Criar host automaticamente
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Você pode permitir que o agente de contexto do host (HCA) detete automaticamente os hosts e verifique se as informações estão corretas. A criação de um host é uma das etapas necessárias para que o storage array saiba quais hosts estão conetados a ele e para permitir o acesso de e/S aos volumes.
+
+.Antes de começar
+Certifique-se de que o Host Context Agent (HCA) esteja instalado e em execução em todos os hosts conetados ao storage array. Os hosts com o HCA instalado e conetado ao storage array são criados automaticamente. Para instalar o HCA, instale o SANtricity Storage Manager no host e selecione a opção Host. O HCA não está disponível em todos os sistemas operacionais suportados. Se não estiver disponível, você deverá criar o host manualmente.
+
+.Passos
+. Selecione menu:armazenamento[hosts].
++
+A tabela lista os hosts criados automaticamente.
+
+. Verifique se as informações fornecidas pelo HCA estão corretas (nome, tipo de host, identificadores de porta de host).
++
+Se você precisar alterar qualquer uma das informações, selecione o host e clique em *Exibir/Editar configurações*.
+
+. *Opcional:* se você quiser que o host criado automaticamente esteja em um cluster, crie um cluster de host e adicione o host ou hosts.
+
+
+.Resultados
+Depois que um host é criado automaticamente, o sistema exibe os seguintes itens na tabela de blocos hosts:
+
+* O nome do host derivado do nome do sistema do host.
+* As portas de identificador de host que estão associadas ao host.
+* O tipo de sistema operacional do host.
+

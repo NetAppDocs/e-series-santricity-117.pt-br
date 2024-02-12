@@ -1,0 +1,33 @@
+---
+permalink: um-certificates/what-do-i-need-to-know-about-mapping-storage-array-roles-unified.html 
+sidebar: sidebar 
+keywords: SANtricity, Unified Manager, E-Series, mapping, storage, array, roles 
+summary: Antes de mapear grupos para funções, revise as diretrizes. 
+---
+= O que eu preciso saber sobre mapeamento para funções de storage array?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Antes de mapear grupos para funções, revise as diretrizes.
+
+Os recursos RBAC (controle de acesso baseado em função) incluem as seguintes funções:
+
+* *Storage admin* -- Acesso completo de leitura/gravação a objetos de armazenamento nas matrizes, mas sem acesso à configuração de segurança.
+* *Security admin* -- Acesso à configuração de segurança em Gerenciamento de Acesso e Gerenciamento de certificados.
+* *Support admin* -- Acesso a todos os recursos de hardware em matrizes de armazenamento, dados de falha e eventos mel. Sem acesso a objetos de armazenamento ou à configuração de segurança.
+* *Monitor* -- Acesso somente leitura a todos os objetos de armazenamento, mas sem acesso à configuração de segurança.
+
+
+[NOTE]
+====
+A função Monitor é necessária para todos os usuários, incluindo o administrador.
+
+====
+Se estiver a utilizar um servidor LDAP (Lightweight Directory Access Protocol) e Serviços de diretório, certifique-se de que:
+
+* Um administrador definiu grupos de usuários no serviço de diretório.
+* Você conhece os nomes de domínio de grupo para os grupos de usuários LDAP.
+
