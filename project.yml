@@ -11,11 +11,11 @@ settings:
   versions:
   - version-number: '11.7'
     url: "/e-series-santricity-117"
-  - version-number: '11.8'
+  - version-number: '11.9'
     url: "/e-series-santricity"
-  - version-number: '11.6'
-    url: "/e-series-santricity-116"
-  langs: pt-br,us-en,ja-jp,ko-kr,zh-cn,zh-tw,de-de,es-es,fr-fr,it-it
+  - version-number: '11.8'
+    url: "/e-series-santricity-118"
+  langs: pt-br,us-en,de-de,es-es,fr-fr,it-it,ja-jp,ko-kr,zh-cn,zh-tw
 sidebar:
   entries:
   - title: Documentos do SANtricity 11,7
