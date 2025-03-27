@@ -15,8 +15,8 @@ Os sistemas e-Series incluem o software SANtricity para provisionamento de stora
 
 Este site descreve como usar as seguintes interfaces de gerenciamento do SANtricity:
 
-* System Manager -- uma interface baseada na Web usada para gerenciar um controlador em um storage array.
-* Unified Manager -- uma interface baseada na Web usada para visualizar e gerenciar todos os storages de armazenamento em sua rede.
+* Gerenciador de sistema do SANtricity -- uma interface baseada na Web usada para gerenciar uma controladora em um storage array.
+* Gerenciador Unificado do SANtricity -- uma interface baseada na Web usada para visualizar e gerenciar todos os storage arrays em sua rede.
 
 
 

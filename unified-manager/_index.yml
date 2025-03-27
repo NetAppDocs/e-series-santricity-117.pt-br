@@ -3,7 +3,7 @@ indexpage:
   tiles:
   - title: Configuração
     links:
-    - title: Visão geral da interface do Unified Manager
+    - title: Visão geral da interface do SANtricity Unified Manager
       url: "../um-admin/overview-interface-unified.html"
     - title: Definir a palavra-passe de administrador
       url: "../um-admin/administrator-password-protection-unified.html"
