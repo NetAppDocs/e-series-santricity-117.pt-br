@@ -1,5 +1,12 @@
 ---
 indexpage:
+  title: Gerenciamento de array único com o SANtricity System Manager 11,7
+  summary: A documentação do software SANtricity permite instalar, configurar e manter
+    seu storage array.
+  keywords: e-series, santricity, 117, software, alerts, system manager, install,
+    maintain, setup
+  lead: A documentação do software SANtricity permite instalar, configurar e manter
+    seu storage array.
   tiles:
   - title: Configure o array
     links:
