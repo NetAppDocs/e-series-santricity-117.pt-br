@@ -642,7 +642,6 @@
   <block id="25ede821aa8fb7855acd09bf30184a3f" category="doc">Como configuro meu servidor DHCP?</block>
   <block id="475db7cba39405460c832f0153c2ff41" category="paragraph">Os endereços IP atribuídos pelo servidor DHCP são geralmente dinâmicos e podem ser alterados porque têm um período de concessão que expira. Alguns dispositivos, por exemplo, servidores e roteadores, precisam usar endereços estáticos. Os controladores em seu storage array também precisam de endereços IP estáticos.</block>
   <block id="d878c1a0629bf1377dc3b13c00aea23b" category="paragraph">Para obter informações sobre como atribuir endereços estáticos, consulte a documentação do servidor DHCP.</block>
-  <block id="e35d3866f0babedb61a0f1ba9102cafd" category="doc">Gerenciador de sistemas SANtricity 11,7</block>
   <block id="a2901d9010330db0bef6be723c7ffa94" category="summary">Se você mover unidades atribuídas de um storage array para outro, será necessário inicializar (formatar) as unidades antes que elas possam ser usadas no novo storage array.</block>
   <block id="ae049f2d526f0c5197a54c9a38eaf72c" category="doc">Inicialize (formate) a unidade</block>
   <block id="e9601b1270d8d056973cf22d6b48e0ef" category="paragraph">A inicialização remove as informações de configuração anteriores de uma unidade e as retorna ao estado não atribuído. A unidade fica então disponível para adicionar a um novo pool ou grupo de volumes na nova matriz de armazenamento.</block>
@@ -3246,7 +3245,6 @@
   <block id="92a98c57d8dff609da2fceddaeac27a4" category="paragraph">As configurações da matriz incluem:</block>
   <block id="9f6081850e27326c653ce13711fd1f40" category="list-text"><block ref="9f6081850e27326c653ce13711fd1f40" category="inline-link-macro-rx"></block></block>
   <block id="590d98531a06e067582f8f395c25ea9d" category="inline-link-macro">Balanceamento de carga automático</block>
-  <block id="3d92225d2ee8c33ffe2c15361da54d2f" category="list-text"><block ref="3d92225d2ee8c33ffe2c15361da54d2f" category="inline-link-macro-rx"></block></block>
   <block id="b07d4a5fc9bdc2d9e09fffa5409bbab4" category="inline-link-macro">Recursos adicionais</block>
   <block id="d9c3b504b15a55277f52a60d4aa86148" category="list-text"><block ref="d9c3b504b15a55277f52a60d4aa86148" category="inline-link-macro-rx"></block></block>
   <block id="919e659946b3b7994ecf9004d9cea4f8" category="inline-link-macro">Segurança da unidade</block>
@@ -7564,7 +7562,6 @@
   <block id="eec5524fce50cee0c258abee17cd7455" category="list-text">Na página Gerenciar, selecione um ou mais arrays de armazenamento.</block>
   <block id="e5d29807b71c6680617647dafa4db722" category="list-text">Selecione menu:tarefas incomuns[fornecer senhas de storage de armazenamento].</block>
   <block id="b6deb366a7ea029beae2c06ae5edbee7" category="list-text">Insira a senha ou as senhas de cada matriz de armazenamento e clique em *Salvar*.</block>
-  <block id="0ce99b430e0880d9c5b01d46d038d4dd" category="summary">SANtricity Unified Manager 5</block>
   <block id="a1f94f83462c2ceebb1aef9832402037" category="summary">Você pode configurar tempos limite para o SANtricity Unified Manager para que as sessões inativas dos usuários sejam desconetadas após um tempo especificado.</block>
   <block id="90bc078771cba1fa174144730e743ae1" category="paragraph">Por padrão, o tempo limite da sessão para o Unified Manager é de 30 minutos. Você pode ajustar esse tempo ou pode desativar os tempos limite da sessão por completo.</block>
   <block id="5cdc5e794d92075b65fddab1a4df3b77" category="list-text">Na barra de menus, selecione a seta suspensa ao lado do nome de login do usuário.</block>
@@ -8736,4 +8733,5 @@
   <block id="3089984c7abf64387bdc035943beae57" category="sidebar">Configuração do Gerenciador de sistema do SANtricity</block>
   <block id="61ed698df3699989d8d782fe430d2755" category="sidebar">Configuração do SANtricity Unified Manager</block>
   <block id="aaf551c2d815af2da13ad25c18d2670e" category="sidebar">Inicie o Gerenciador de sistema do SANtricity</block>
+  <block id="bc7dec44af17b73eb800d426c3a75c9f" category="list-text"><block ref="bc7dec44af17b73eb800d426c3a75c9f" category="inline-link-macro-rx"></block></block>
 </blocks>
